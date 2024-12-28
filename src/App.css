@@ -1,0 +1,87 @@
+.screen{
+  /* background-color: orange; */
+  margin: auto;
+  width :  100vw ;
+  height : 100vh ;
+  display : flex ;
+  justify-content : start ;
+  color: #ddd ;
+  overflow-x: hidden;
+}
+
+.adder{
+    /* background-color: orange; */
+    top: 10px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    height: 40% ;
+    font-size: 1.1rem;
+    gap: 30px;
+}
+
+
+
+
+
+
+@media (max-width: 768px) {
+  .screen {
+    flex-direction: column;
+    /* justify-content: center; */
+  }
+  
+  .adder {
+    
+    width: 90%;
+    height: auto; /* Adjust the height for small screens */
+    font-size: 1rem; /* Slightly smaller font size */
+    gap: 20px; /* Reduce gap between elements */
+  }
+
+  .info1 {
+    flex-direction: column; /* Stack the inputs vertically */
+    width: 100%;
+    gap: 10px; /* Space between inputs */
+  }
+
+  .info1 input {
+    width: 100%; /* Full width inputs */
+  }
+
+  .description , .description input{
+    width: 100%; /* Make description input full width */
+  }
+
+  .submit-new input {
+    width: 100%; /* Full width submit button */
+  }
+}
+
+/* For very small devices (e.g., mobile phones) */
+@media (max-width: 480px) {
+  .adder {
+    font-size: 0.9rem; /* Smaller font size for very small screens */
+  }
+
+  .info1 {
+    gap: 8px; /* Reduce the gap for smaller devices */
+  }
+
+  .info1 input {
+    padding: 10px; /* Adjust padding for small inputs */
+  }
+
+  .description input {
+    padding: 10px; /* Adjust padding for small inputs */
+    width: 100% ;
+    /* background-color: orange; */
+  }
+
+  .submit-new input {
+    padding: 12px; /* Larger button on smaller screens */
+  }
+}
